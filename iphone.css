@@ -1,0 +1,72 @@
+:root {
+  --bg: #5D7070;
+}
+
+/* IPHONE-7 */
+.iphone {
+  width: 310px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px -1px rgba(255,255,255, 0.50),
+  -1px -1px 5px -1px rgba(255,255,255, 0.30),
+  1px 15px 10px 0px rgba(0,0,0, 0.20),
+  inset 1px 1px 10px rgba(0,0, 0,0.40),
+  inset -1px -10px 10px rgba(0, 0, 0, 0.10);
+  position: relative;
+}
+.screen {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--bg);
+  color: #fff;
+  position: relative;
+  bottom: 8px;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 100;
+}
+.top {
+  height: 4px;
+  width: 60px;
+  background: #000;
+  position: absolute;
+  top: 35px;
+  border-radius: 5px;
+}
+.top::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: black;
+  position: absolute;
+  top: -16px;
+  left: 27px;
+  border-radius: 5px;
+}
+.top::before {
+  content: "";
+  height: 11px;
+  width: 11px;
+  background: black;
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  border-radius: 5px;
+}
+.home-btn {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  box-shadow: 1px 1px 5px -1px rgba(255,255, 255, 0.40),
+  -1px -1px 2px 0.6px rgba(0,0,0,0.30);
+  transform: rotate(25deg);
+}
